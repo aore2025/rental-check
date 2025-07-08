@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>家賃適正チェックアプリ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>家賃適正チェックアプリ</h1>
+
+  <div class="form-group">
+    <div>
+      <label>① 家賃:</label><br>
+      <input type="number" id="rent" />
+    </div>
+    <br>
+    <div>
+      <label>② 管理費・共益費:</label><br>
+      <input type="number" id="management" />
+    </div>
+    <br>
+    <div>
+      <label>③ 駐車場代:</label><br>
+      <input type="number" id="parking" />
+    </div>
+    <br>
+    <div>
+      <label>④ その他:</label><br>
+      <input type="number" id="other" />
+    </div>
+    <br>
+    <div>
+      <label>⑤ 手取り収入:</label><br>
+      <input type="number" id="income" />
+    </div>
+    <br>
+    <button onclick="calculate()">チェック</button>
+  </div>
+
+  <div id="result" class="result-box hidden">
+    <p id="percent"></p>
+    <div id="rank" class="rank-box"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
