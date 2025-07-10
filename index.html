@@ -6,40 +6,38 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>家賃適正チェックアプリ</h1>
+  <div class="container">
+    <p class="subtitle">お部屋探しの前に確認！<br>収入に合った適正家賃を1分でチェック！</p>
+    <h1>家賃適正チェックアプリ</h1>
 
-  <div class="form-group">
-    <div>
-      <label>① 家賃:</label><br>
-      <input type="number" id="rent" />
+    <div class="form-group">
+      <div>
+        <label>① 家賃（万円）:</label><br>
+        <select id="rent"></select>
+      </div>
+      <div>
+        <label>② 管理費・共益費（万円）:</label><br>
+        <select id="management"></select>
+      </div>
+      <div>
+        <label>③ 駐車場代（万円）:</label><br>
+        <select id="parking"></select>
+      </div>
+      <div>
+        <label>④ その他（万円）:</label><br>
+        <select id="other"></select>
+      </div>
+      <div>
+        <label>⑤ 月収（手取り）（万円）:</label><br>
+        <select id="income"></select>
+      </div>
+      <button onclick="calculate()">チェック</button>
     </div>
-    <br>
-    <div>
-      <label>② 管理費・共益費:</label><br>
-      <input type="number" id="management" />
-    </div>
-    <br>
-    <div>
-      <label>③ 駐車場代:</label><br>
-      <input type="number" id="parking" />
-    </div>
-    <br>
-    <div>
-      <label>④ その他:</label><br>
-      <input type="number" id="other" />
-    </div>
-    <br>
-    <div>
-      <label>⑤ 手取り収入:</label><br>
-      <input type="number" id="income" />
-    </div>
-    <br>
-    <button onclick="calculate()">チェック</button>
-  </div>
 
-  <div id="result" class="result-box hidden">
-    <p id="percent"></p>
-    <div id="rank" class="rank-box"></div>
+    <div id="result" class="result-box hidden">
+      <p id="percent"></p>
+      <div id="rank" class="rank-box"></div>
+    </div>
   </div>
 
   <script src="script.js"></script>
