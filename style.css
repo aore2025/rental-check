@@ -7,9 +7,9 @@ body {
 }
 
 .container {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 30px 20px;
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 20px;
   color: #fff;
 }
@@ -30,7 +30,9 @@ h1 {
   color: #333;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  max-width: 100%;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -38,15 +40,17 @@ h1 {
   margin-bottom: 15px;
 }
 
-input {
-  padding: 8px;
-  width: 80%;
+select, input {
+  padding: 10px;
   font-size: 16px;
+  width: 90%;
+  max-width: 300px;
+  box-sizing: border-box;
 }
 
 button {
   margin-top: 10px;
-  padding: 10px 20px;
+  padding: 12px 20px;
   font-size: 16px;
   background: #009297;
   color: white;
@@ -62,6 +66,7 @@ button {
   text-align: center;
   background: #ffffff;
   color: #333;
+  box-sizing: border-box;
 }
 
 .hidden {
@@ -70,7 +75,7 @@ button {
 
 .rank-box {
   margin-top: 10px;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
   padding: 15px;
   border-radius: 10px;
@@ -78,14 +83,14 @@ button {
 }
 
 .rank-a {
-  background-color: #4CAF50; /* 緑 */
+  background-color: #4CAF50;
 }
 
 .rank-b {
-  background-color: #FFC107; /* 黄 */
+  background-color: #FFC107;
   color: #333;
 }
 
 .rank-c {
-  background-color: #F44336; /* 赤 */
+  background-color: #F44336;
 }
